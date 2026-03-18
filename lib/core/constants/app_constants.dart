@@ -2,20 +2,11 @@ class AppConstants {
   // ── Supabase ──────────────────────────────────────────────────────────────
   // Keys are injected via --dart-define at build time for production.
   // Fallback values are used for local development only.
-  static const String supabaseUrl = String.fromEnvironment(
-    'SUPABASE_URL',
-    defaultValue: 'https://cjsuxuzkmwztyfvbksgm.supabase.co',
-  );
-  static const String supabaseAnonKey = String.fromEnvironment(
-    'SUPABASE_ANON_KEY',
-    defaultValue: 'sb_publishable_CMVKqhP5eEiD3faf9KhoLw_LcwgF3TC',
-  );
+  static const String supabaseUrl = String.fromEnvironment('SUPABASE_URL');
+  static const String supabaseAnonKey = String.fromEnvironment('SUPABASE_ANON_KEY');
 
   // ── Google Maps ───────────────────────────────────────────────────────────
-  static const String googleMapsApiKey = String.fromEnvironment(
-    'GOOGLE_MAPS_API_KEY',
-    defaultValue: 'AIzaSyAQMk5ZImZr74KFwlxtSDpkQNU2eCAdH4s',
-  );
+  static const String googleMapsApiKey = String.fromEnvironment('GOOGLE_MAPS_API_KEY');
 
   // ── Database Tables ───────────────────────────────────────────────────────
   static const String profilesTable = 'profiles';
